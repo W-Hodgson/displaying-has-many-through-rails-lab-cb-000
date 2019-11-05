@@ -5,6 +5,7 @@
     <title>Patient Show Page!</title>
   </head>
   <body>
+    <h1><%= @patient.name %></h1>
     <ul>
       <% @patient.appointments.each do |app| %>
         <li>Date of Appointment: <%= app.appointment_datetime.strftime("%B %d, %Y at %H:%M") %> - Doctor: <%= link_to app.doctor.name, doctor_path(app.doctor) %></li>
