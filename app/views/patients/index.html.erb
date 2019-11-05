@@ -5,8 +5,11 @@
     <title>Patient Index Page</title>
   </head>
   <body>
-    <% @patients.each do |patient| %>
-      <p> <%= patient.name %> <%= patient.appointments.count %></p> <br>
-    <% end %>
+    <ul>
+      <% @patients.each do |patient| %>
+        <li> <%= patient.name %> <%= patient.appointments.count %></li> <br>
+      <% end %>
+    </ul>
+    
   </body>
 </html>
