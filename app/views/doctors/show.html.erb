@@ -8,7 +8,7 @@
     <h1><%= @doctor.name %></h1>
     <h2><%= @doctor.department %></h2>
     <% @doctor.appointments.each do |app|%>
-      <p><%= appointment.appointment_datetime.strftime("%B %d, %Y at %H:%M") %></p> <br>
+      <p><%= appointment.appointment_datetime.strftime("%B %d, %Y at %H:%M") %> - <%= appointment.patient %></p> <br>
     <% end %>
   </body>
 </html>
